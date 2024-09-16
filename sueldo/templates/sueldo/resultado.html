@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados del Cálculo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Resultados del Cálculo de Pago</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Pago semanal:</strong> {{ pago_semanal }}
+            </li>
+            <li class="list-group-item">
+                <strong>Bonificación por hijos:</strong> {{ bonificacion }}
+            </li>
+            <li class="list-group-item">
+                <strong>Descuento:</strong> {{ descuento }}
+            </li>
+            <li class="list-group-item">
+                <strong>Pago final:</strong> {{ pago_final }}
+            </li>
+        </ul>
+        <a href="{% url 'calculo_pago' %}" class="btn btn-primary mt-4">Volver a calcular</a>
+    </div>
+</body>
+</html>
